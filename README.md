@@ -1,6 +1,8 @@
 
 
-# Crear un formulario para la compra de inmuebles. Los datos que debe recoger son:
+# Crear un formulario para la compra de inmuebles. 
+
+Los datos que debe recoger son:
 
 - Tipo de Inmueble. Desplegable con los valores: piso, adosado, parcela, casa, chalet, local, nave.
 - Provincia: Caja de texto con las sugerencias Madrid, Valencia, Barcelona,Murcia.
