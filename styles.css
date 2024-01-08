@@ -67,6 +67,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 button.reset {
     background-color: #4A4A4A;
     text-shadow: 3px 1px 4px rgba(204, 204, 204, 0.66);
@@ -74,7 +75,7 @@ button.reset {
     float: right;
     position: absolute;
     padding: 10px 7px;
-    bottom: -793px;
+    bottom: -454px;
     font-size: 23px;
-    left: 695px;
+    left: 1030px;
 }
