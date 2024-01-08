@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 5 - Ejercicio 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulario para la compra de Inmuebles</h1>
+    <form id="formulario" action="#" method="post">
+        <label for="tipoInmueble">Tipo de inmueble:</label>
+        <select name="tipoInmueble" id="tipoInmueble">
+            <option value="piso">Piso</option>
+            <option value="adosado">Adosado</option>
+            <option value="parcela">Parcela</option>
+            <option value="casa">Casa</option>
+            <option value="chalet">Chalet</option>
+            <option value="local">Local</option>
+            <option value="nave">Nave</option>
+        </select>
+        <label for="provincia">Provincia:</label>
+        <input type="text" name="provincia" id="provincia" list="sugerenciasProvincia">
+        <datalist id="sugerenciasProvincia">
+            <option value="Madrid"></option>
+            <option value="Valencia"></option>
+            <option value="Barcelona"></option>
+            <option value="Murcia"></option>
+        </datalist>
+        <label for="ubicacion">Ubicación:</label>
+        <select name="ubicacion" id="ubicacion" size="4" multiple>
+            <option value="centro">Centro</option>
+            <option value="sur">Sur</option>
+            <option value="este">Este</option>
+            <option value="oeste">Oeste</option>
+            <option value="ronda">Ronda</option>
+            <option value="periferia">Periferia</option>
+        </select>
+        <label for="precio">Precio Máximo:</label>
+        <input type="number" name="precio" id="precio" min="0" max="500000" step="10000">
+        <label for="metros">Metros Mínimos:</label>
+        <input type="number" name="metros" id="metros" min="0" max="5000" step="50">
+        <label for="altura">Altura Mínima:</label>
+        <input type="number" name="altura" id="altura" min="0" max="50">
+        <label for="habitaciones">Mínimo de Habitaciones:</label>
+        <input type="number" name="habitaciones" id="habitaciones" min="1" max="10">
+        <label for="baños">Mínimo de Baños:</label>
+        <input type="number" name="baños" id="baños" min="1" max="5">
+        <label>Características:</label>
+        <input type="checkbox" name="calefaccion" id="calefaccion">
+        <label for="calefaccion">Calefacción</label>
+        <input type="checkbox" name="aire" id="aire">
+        <label for="aire">Aire Acondicionado</label>
+        <input type="checkbox" name="garaje" id="garaje">
+        <label for="garaje">Garaje</label>
+        <input type="checkbox" name="trastero" id="trastero">
+        <label for="trastero">Trastero</label>
+        <input type="checkbox" name="piscina" id="piscina">
+        <label for="piscina">Piscina</label>
+        <input type="checkbox" name="ascensor" id="ascensor">
+        <label for="ascensor">Ascensor</label>
+        <input type="checkbox" name="exterior" id="exterior">
+        <label for="exterior">Exterior</label>
+        <input type="checkbox" name="terraza" id="terraza">
+        <label for="terraza">Terraza</label>
+        <input type="checkbox" name="amueblado" id="amueblado">
+        <label for="amueblado">Amueblado</label>
+        <label for="playa">Proximidad a la Playa:</label>
+        <input type="range" name="playa" id="playa" min="0" max="100" step="10">
+        <label for="estado">Estado:</label>
+        <input type="radio" name="estado" id="indiferente" checked>
+        <label for="indiferente">Indiferente</label>
+        <input type="radio" name="estado" id="nuevo">
+        <label for="nuevo">Nuevo</label>
+        <input type="radio" name="estado" id="bueno">
+        <label for="bueno">Buen estado</label>
+        <input type="radio" name="estado" id="reformar">
+        <label for="reformar">Para reformar</label>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" maxlength="35">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="75">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" name="correo" id="correo">
+        <label for="nacimiento">Fecha Nacimiento:</label>
+        <input type="date" name="nacimiento" id="nacimiento">
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" cols="60" rows="6"></textarea>
+        <input type="hidden" name="fechaActual" id="fechaActual">
+        <button type="submit">
+            <img src="img/send-button.svg" alt="Enviar" width="200" height="150">
+        </button>
+        <button type="reset" class="reset">Restablecer formulario</button>
+    </form>
+        <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

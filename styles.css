@@ -1,0 +1,80 @@
+body {
+    font-family: monospace;
+    background-color: #cccccc6b;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    text-shadow: 3px 1px 4px rgba(0, 0, 0, 0.66);
+    margin: 40px 0px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff63;
+    border: 3px solid #55555545;
+    padding: 70px 70px 0px 70px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+    content: '\00a0'; 
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #333;
+    margin-right: 10px; 
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px; 
+}
+
+input[type="checkbox"]:checked + label:before, input[type="radio"]:checked + label:before {
+    content: '\2713'; 
+    background-color: #55555545; 
+    color: white; 
+    border-color: #55555545; 
+}
+
+button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.reset {
+    background-color: #4A4A4A;
+    text-shadow: 3px 1px 4px rgba(204, 204, 204, 0.66);
+    box-shadow: 3px 1px 4px rgba(204, 204, 204, 0.66);
+    float: right;
+    position: absolute;
+    padding: 10px 7px;
+    bottom: -793px;
+    font-size: 23px;
+    left: 695px;
+}
